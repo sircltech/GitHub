@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Capture Photo</title>
+     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+     <script type="text/javascript" charset="utf-8" src="res/camera.js"></script>
+    <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" charset="utf-8"> 
+    
+    </script>
+   </head>
+  <body>
+    <button onclick="capturePhoto();" data-inline="true">Capture Photo</button> <br>
+    <button onclick="capturePhotoEdit();" data-inline="true">Capture Editable Photo</button> <br>
+    <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);" data-inline="true">From Photo Library</button><br>
+    <button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);" data-inline="true">From Photo Album</button><br>
+    <img style="display:none;width:100px;height:100px;" id="smallImage" src="" />
+    <img style="display:none;" id="largeImage" src="" />
+    <span>Current Location : </span>
+    <ul>
+     <li> Latitude : <span id="latSpan" class="latSpan"></span></li>
+     <li> Longitude: <span id="lonSpan" class="lonSpan"></span></li>   
+    </ul>
+    
+    <div id="map-container"></div>
+    <span>Current Location : All Details:</span>
+    <p id="geolocation">Finding geolocation...</p>
+    <div id="googleMap" style="width:500px;height:380px;"></div>
+    <!-- <button onclick="clearWatch();">Clear Watch</button>  -->
+    <script>
+    	
+    </script>
+  </body>
+</html>
